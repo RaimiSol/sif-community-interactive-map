@@ -1,0 +1,39 @@
+{
+  "name": "sif-community-interactive-map",
+  "version": "1.0.0",
+  "description": "Interactive map visualizing communities supported by Stiftung Internationales Forum.",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaimiSol/sif-community-interactive-map.git"
+  },
+  "keywords": [
+    "Stiftung-Internationales-Forum",
+    "interactive-map"
+  ],
+  "author": "Raimi Solorzano Niederhausen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RaimiSol/sif-community-interactive-map/issues"
+  },
+  "homepage": "https://github.com/RaimiSol/sif-community-interactive-map#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "lodash": "^4.17.20"
+  }
+}
