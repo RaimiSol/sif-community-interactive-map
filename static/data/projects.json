@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "name": "Solaranlagen",
+            "type": "SUN",
+            "description": "tbd",
+            "progress": "PLANNED",
+            "start_date": "2022-04-23",
+            "end_date": null,
+            "community": "Gapo"
+        },
+        {
+            "name": "Brunnen",
+            "type": "WATER",
+            "description": "tbd",
+            "progress": "STARTED",
+            "start_date": "2012-04-23",
+            "end_date": "2022-04-23",
+            "community": "Tokozone"
+        }
+    ]
+}
