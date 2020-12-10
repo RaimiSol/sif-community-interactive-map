@@ -1,0 +1,22 @@
+{
+  "extends": "./node_modules/gts/",
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "webpack.config.js",
+        "test/**/*.js"
+      ],
+      "rules": {
+        "node/no-unpublished-require": "off"
+      }
+    }
+  ]
+}
