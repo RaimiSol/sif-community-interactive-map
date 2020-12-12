@@ -18,12 +18,26 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/img',
+              publicPath: 'assets/img',
+            },
+          },
+        ],
       },
     ],
   },
@@ -36,5 +50,8 @@ module.exports = {
     writeToDisk: true,
     open: 'firefox', //open in chrome
     publicPath: '/dist',
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js', '.json'],
   },
 };
