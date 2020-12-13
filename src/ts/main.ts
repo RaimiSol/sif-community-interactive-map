@@ -17,8 +17,9 @@ const DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 import '../../static/scss/main.scss';
-import {Community} from './core/community';
+import {Community, CommunityJSON} from './core/community';
 import {CommunityMarker} from './core/marker';
+import {Project, ProgressType, ProjectType} from './core/project';
 
 const MAP_ID = 'mapid';
 
@@ -39,11 +40,10 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-communities.communities.forEach(community_json => {
-  const community = new Community(
-    community_json.name,
-    community_json.location.latitude,
-    community_json.location.longitude
+communities.communities.forEach((community_json: CommunityJSON) => {
+  const community = JSON.parse(
+    JSON.stringify(community_json),
+    Community.reviver
   );
   const marker = new CommunityMarker(community);
   marker.getMarker().addTo(map);

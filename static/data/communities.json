@@ -1,25 +1,46 @@
 {
-    "communities": [
+  "communities": [
+    {
+      "name": "Gapo",
+      "location": {
+        "latitude": 14.67884,
+        "longitude": -16.19387
+      },
+      "projects": [
         {
-            "name": "Gapo",
-            "location": {
-                "latitude": 14.67884, 
-                "longitude": -16.19387
-            }
-        },
-        {
-            "name": "Sambe tokossone",
-            "location": {
-                "latitude": 14.6921952,
-                "longitude": -16.175487
-            }
-        },
-        {
-            "name": "Patar",
-            "location": {
-                "latitude": 14.7083533,
-                "longitude": -16.156858 
-            }
+          "name": "Solaranlagen",
+          "type": "SUN",
+          "description": "tbd",
+          "progress": "PLANNED",
+          "startDate": "2022-04-23",
+          "endDate": ""
         }
-    ]
+      ]
+    },
+    {
+      "name": "Sambe Tokossone",
+      "location": {
+        "latitude": 14.6921952,
+        "longitude": -16.175487
+      },
+      "projects": [
+        {
+          "name": "Brunnen",
+          "type": "WATER",
+          "description": "tbd",
+          "progress": "STARTED",
+          "startDate": "2012-04-23",
+          "endDate": "2022-04-23"
+        }
+      ]
+    },
+    {
+      "name": "Patar",
+      "location": {
+        "latitude": 14.7083533,
+        "longitude": -16.156858
+      },
+      "projects": []
+    }
+  ]
 }
